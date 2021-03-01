@@ -14,9 +14,9 @@ check-files = "task_03.main:main"
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-coverage = "^5.5"
 pytest = "^6.2.2"
 flake8 = "^3.8.4"
+pytest-cov = "^2.11.1"
 
 [build-system]
 requires = ["poetry>=0.12"]

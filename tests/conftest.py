@@ -8,7 +8,7 @@ def path_to_input_file():
 
 @pytest.fixture()
 def path_to_directory():
-    return 'tests/fixtures/test_input_file.txt'
+    return 'tests/fixtures/test_directory'
 
 
 @pytest.fixture()

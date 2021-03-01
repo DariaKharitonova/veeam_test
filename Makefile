@@ -1,11 +1,14 @@
 install:
 	@poetry install
 
-lint:
-	poetry run flake8 task_03 tests
+build: check
+	@poetry build
 
 test:
 	poetry run pytest -v
+
+lint:
+	poetry run flake8 task_03 tests
 
 coverage:
 	poetry run pytest --cov=task_03 --cov-report xml
