@@ -9,9 +9,10 @@ def check_files(file_path, directory_path):
         lines = input_file.read().splitlines()
 
         for line in lines:
-            file_name = line.split()[0]
-            hash_algorithm = line.split()[1].upper()
-            hash_sum = line.split()[2]
+            parsed_lines = line.split()
+            file_name = parsed_lines[0]
+            hash_algorithm = parsed_lines[1].upper()
+            hash_sum = parsed_lines[2]
             path_to_check_files = f'{directory_path}/{file_name}'
             if hash_algorithm not in AVAILABLE_ALGORITHMS:
                 result += f'{file_name} WRONG ALGORITHM\n'
