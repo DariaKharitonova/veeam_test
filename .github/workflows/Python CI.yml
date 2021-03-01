@@ -26,9 +26,5 @@ jobs:
       run: make install
     - name: Test & publish code coverage
       uses: paambaati/codeclimate-action@v2.7.4
-      env:
-        CC_TEST_REPORTER_ID: ${{ secrets.TOKEN_ID }}
-      with:
-          coverageCommand: make coverage
     - name: lint
       run: make lint
