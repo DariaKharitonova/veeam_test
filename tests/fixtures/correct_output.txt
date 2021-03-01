@@ -1,0 +1,5 @@
+file_01.txt OK
+file_02.txt FAIL
+file_03.txt OK
+file_04.txt NOT FOUND
+файл_05.yaml WRONG ALGORITHM

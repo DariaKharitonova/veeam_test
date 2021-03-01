@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "veeam_test_qa"
+version = "0.1.0"
+description = ""
+authors = ["Daria <kharitonovadari@gmail.com>"]
+packages = [
+    { include = "task_03"}
+]
+
+[tool.poetry.scripts]
+check-files = "task_03.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+coverage = "^5.5"
+pytest = "^6.2.2"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
